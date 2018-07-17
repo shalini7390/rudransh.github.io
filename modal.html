@@ -1,0 +1,78 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+   <title>Rudransh</title>
+ <meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable = no">
+  <link rel="stylesheet" type="text/css" href="style.css">
+   <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Istok+Web:400,700" rel="stylesheet">
+<style>
+body{
+  background-image:url("hanu.jpg") ; 
+    margin-top: 0;
+    padding-right:800px;
+    padding-left: 800px;
+    background-size:800px;
+    background-repeat: no-repeat;
+    background-color:skyblue;
+}
+h1{
+  color:red;
+}
+</style>
+</head>
+<body >
+
+
+<h1 align="left">Rudransh Dubey </h1>
+
+
+
+
+<button id="myBtn">Click to know more </button>
+
+<!-- The Modal -->
+<div id="myModal" class="modal">
+
+  <!-- Modal content -->
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <p>Are you ready to know me? Here I go.</p>
+    <li><button><a href="navbar1.html">Ok</a></button></li>
+      <li><button><a href="index.html">Cancel</a></button></li>
+  </div>
+
+</div>
+
+<script>
+// Get the modal
+var modal = document.getElementById('myModal');
+
+// Get the button that opens the modal
+var btn = document.getElementById("myBtn");
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks the button, open the modal 
+btn.onclick = function() {
+    modal.style.display = "block";
+}
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+    modal.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
+</script>
+ <script src="jquery-3.3.1.min.js"></script>
+    
+</body>
+</html>
